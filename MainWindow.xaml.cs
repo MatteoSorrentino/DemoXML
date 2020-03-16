@@ -60,5 +60,6 @@ namespace DemoXML
 
             Dispatcher.Invoke(() => lst_Attori.ItemsSource = attori);
         }
+
     }
 }
