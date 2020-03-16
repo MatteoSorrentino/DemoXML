@@ -1,0 +1,13 @@
+﻿<Window x:Class="DemoXML.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DemoXML"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Background="#FF369161">
+        <Button x:Name="btn_Aggiorna" Content="Visualizza dati" HorizontalAlignment="Left" Margin="76,0,0,0" VerticalAlignment="Center" Height="38" Width="136" Click="btn_Aggiorna_Click"/>
+        <ListBox x:Name="lst_Attori" Margin="325,49,99,49" Background="#FF90B5C0"/>
+    </Grid>
+</Window>
