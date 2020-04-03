@@ -6,8 +6,18 @@
         xmlns:local="clr-namespace:DemoXML"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid Background="#FF369161">
-        <Button x:Name="btn_Aggiorna" Content="Visualizza dati" HorizontalAlignment="Left" Margin="76,0,0,0" VerticalAlignment="Center" Height="38" Width="136" Click="btn_Aggiorna_Click"/>
-        <ListBox x:Name="lst_Attori" Margin="325,49,99,49" Background="#FF90B5C0"/>
+    <Grid Background="#FF366F91">
+        <Button x:Name="btn_Aggiorna" Content="Visualizza dati" HorizontalAlignment="Left" Margin="65,82,0,0" VerticalAlignment="Top" Height="38" Width="136" Click="btn_Aggiorna_Click" FontWeight="Bold"/>
+        <ListBox x:Name="lst_Attori" Margin="65,141,423,56" Background="#FFA8A8A8" BorderBrush="White" SelectionChanged="lst_Attori_SelectionChanged"/>
+        <Button x:Name="btn_Stop" Content="Interrompi caricamento" IsEnabled="False" HorizontalAlignment="Left" Margin="241,82,0,0" VerticalAlignment="Top" Height="38" Width="136" Click="btn_Stop_Click" FontWeight="Bold"/>
+        <Label Content="Attori candidati e vincitori di Oscar" HorizontalAlignment="Left" Margin="221,10,0,0" VerticalAlignment="Top" FontStyle="Italic" FontWeight="Bold" Height="51" Width="424" FontSize="28" FontFamily="Candara" Foreground="#FFB90A0A"/>
+        <TextBox HorizontalAlignment="Left" Margin="445,141,0,0" IsEnabled="True" TextWrapping="Wrap" VerticalAlignment="Top" Width="312" Height="237" Background="#FFA8A8A8" BorderBrush="White"/>
+        <Label Content="Modifica caratteristiche attore" HorizontalAlignment="Left" Margin="504,154,0,0" VerticalAlignment="Top" Width="200" FontWeight="Bold"/>
+        <TextBox x:Name="txt_Oscar" HorizontalAlignment="Left" Margin="544,242,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txt_Nomination" HorizontalAlignment="Left" Margin="544,288,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Oscar" HorizontalAlignment="Left" Margin="482,234,0,0" VerticalAlignment="Top"/>
+        <Label Content="Nomination" HorizontalAlignment="Left" Margin="466,284,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btn_Salva" Content="Salva modifiche" HorizontalAlignment="Left" Margin="557,343,0,0" VerticalAlignment="Top" Click="btn_Salva_Click"/>
+        <Label x:Name="lbl_Attore" HorizontalAlignment="Left" Margin="540,185,0,0" VerticalAlignment="Top" Height="32" Width="122"/>
     </Grid>
 </Window>

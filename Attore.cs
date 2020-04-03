@@ -14,7 +14,7 @@ namespace DemoXML
 
         public override string ToString()
         {
-            return $"{Nome} {Cognome} ha avuto {Nomination} nominations e ha vinto {Oscar} oscar";
+            return $"{Nome} {Cognome}";
         }
     }
 }
